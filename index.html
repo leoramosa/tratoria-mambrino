@@ -305,7 +305,7 @@
 
 
 
-    <div class="overlay-new-2" id="overlay-new-2"></div>
+    <div class="overlay-new-2" id="overlay-new-2">
     <div class="modal-new-2" id="modal-new-2">
         <button class="modal-close-btn-new-2" id="close-btn-new-3" ><span  title="close">x</span></button>
         <div class="title-new-modal-2">
@@ -351,6 +351,7 @@
             </div>
         </div>
         <div class="close-new-modal" id="close-btn-new-4">cerrar</div>
+    </div>
     </div>
    
     <!-- end agregando modals -->
@@ -512,33 +513,27 @@
         .modal-new {
         pointer-events: none;
         position: relative;
-  top: 10rem;
-  background-color: #ffffff;
+        top: 10rem;
+        background-color: #ffffff;
         max-width:420px;
         width: 100%;
         padding: 1rem;
-
-  border-radius: 6px;
-  border: 1px solid #a5a5a5;
-
-  transition: opacity 0.2s;
+        border-radius: 6px;
+        border: 1px solid #a5a5a5;
+         transition: opacity 0.2s;
         }
 
         .modal-new-2 {
         pointer-events: none;
-        opacity: 0;
-        transition: opacity 0.3s;
-        position: absolute;
-        top: 2%;
-        left: 0;
-        right: 0;
         max-width:740px;
         width: 100%;
-        margin: 0 auto;
         padding: 12px 20px;
-        background: #fff;
-        border-radius: 4px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        position: relative;
+        top: 10rem;
+        background-color: #ffffff;
+        border-radius: 6px;
+         border: 1px solid #a5a5a5;
+        transition: opacity 0.2s;
         }
         .modal-close-btn-new, .modal-close-btn-new-2 {
         position: absolute;
@@ -566,16 +561,18 @@
 
         .overlay-new-2 {
         pointer-events: none;
-        opacity: 0;
-        transition: opacity 0.3s;
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
         bottom: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.3);
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: opacity 0.3s;
+        opacity: 0;
+        transition: 0.5s;
         }
 
         /** JS */
