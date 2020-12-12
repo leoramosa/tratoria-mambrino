@@ -510,10 +510,8 @@
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.3s;
-        position: absolute;
-        top: 25%;
-        left: 0;
-        right: 0;
+        position: relative;
+        top: 10rem;
         max-width:420px;
         width: 100%;
         margin: 0 auto;
@@ -521,6 +519,9 @@
         background: #fff;
         border-radius: 4px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+         transition-property: opacity, left, top, height;
+        transition-duration: 3s, 5s, 3s, 5s;
+        transition-delay: 10s;
         }
 
         .modal-new-2 {
@@ -548,17 +549,18 @@
 
         /** Overlay */
         .overlay-new {
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity 0.3s;
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
         bottom: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.3);
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 25;
+        transition: 2s;
         }
 
         .overlay-new-2 {
