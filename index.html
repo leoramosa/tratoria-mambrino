@@ -735,7 +735,7 @@ s0.parentNode.insertBefore(s1,s0);
             }
 
             .content-new-modal{
-            height:450px
+            height:400px
             }
 
             .panel-group-new{
@@ -753,7 +753,7 @@ s0.parentNode.insertBefore(s1,s0);
                 padding: 10px 7px;
             }
             .content-new-modal{
-            height:350px
+            height:300px
             }
             .content-direcion, .descuentos {
                 padding-left: 22px;
@@ -763,6 +763,13 @@ s0.parentNode.insertBefore(s1,s0);
             .title-new-modal-2 {
                 font-size: 16px;
                 font-weight: 800;
+            }
+            .panel-group-new {
+                padding: 0;
+            }
+            .modal-new {
+                width: 320px;
+                padding: 5px 10px;
             }
             
         }
@@ -776,16 +783,7 @@ s0.parentNode.insertBefore(s1,s0);
         }
 
 
-        @media screen and (max-width: 480px) {
-            .panel-group-new {
-                padding: 0;
-            }
-            .modal-new {
-                width: 320px;
-                padding: 5px 10px;
-            }
-        }
-
+       
         /* fin media-query-screen */
 
 
@@ -846,8 +844,8 @@ document.getElementById('close-btn-new-4').addEventListener('click', function() 
   document.getElementById('overlay-new-2').classList.remove('is-visible-2');
   document.getElementById('modal-new-2').classList.remove('is-visible-2');
 });
-document.getElementById('overlay-new').addEventListener('click', function() {
-  document.getElementById('overlay-new').classList.remove('is-visible-2');
+document.getElementById('overlay-new-2').addEventListener('click', function() {
+  document.getElementById('overlay-new-2').classList.remove('is-visible-2');
   document.getElementById('modal-new-2').classList.remove('is-visible-2');
 });
         </script>
