@@ -299,7 +299,7 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- agregando modals -->
     <div class="overlay-new" id="overlay-new">
     <div class="modal-new" id="modal-new">
-        <button class="modal-close-btn-new" id="close-btn-new" ><span  title="close">x</span></button>
+        <!-- <button class="modal-close-btn-new" id="close-btn-new" ><span  title="close">x</span></button> -->
         <div class="title-new-modal">
             <p>Reservar por:</p>
             <div class="img-24-mesa">
@@ -815,10 +815,10 @@ document.getElementById('btn-modal-new').addEventListener('click', function() {
   document.getElementById('modal-new').classList.add('is-visible');
 });
 
-document.getElementById('close-btn-new').addEventListener('click', function() {
+/* document.getElementById('close-btn-new').addEventListener('click', function() {
   document.getElementById('overlay-new').classList.remove('is-visible');
   document.getElementById('modal-new').classList.remove('is-visible');
-});
+}); */
 document.getElementById('close-btn-new-2').addEventListener('click', function() {
   document.getElementById('overlay-new').classList.remove('is-visible');
   document.getElementById('modal-new').classList.remove('is-visible');
